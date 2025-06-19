@@ -39,7 +39,7 @@ jobs:
         export MLFLOW_TRACKING_URI=https://dagshub.com/cikalfirdansyah/telco-churn-mlops.mlflow
         export MLFLOW_TRACKING_USERNAME=${{ secrets.MLFLOW_USERNAME }}
         export MLFLOW_TRACKING_PASSWORD=${{ secrets.MLFLOW_PASSWORD }}
-        mlflow models build-docker -m "models:/Modelling dan Tuning Eksperimen/1" -n telco-churn
+        mlflow models build-docker -m "models:/Modelling-dan-Tuning-Registry/latest" -n telco-churn
 
     - name: Login to DockerHub
       run: |
