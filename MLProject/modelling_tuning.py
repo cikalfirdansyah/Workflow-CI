@@ -88,5 +88,10 @@ with mlflow.start_run():
     })
 
     # Logging model
-    mlflow.sklearn.log_model(best_model, "model")
+    mlflow.sklearn.log_model(
+        sk_model=best_model,
+        artifact_path="model",
+        registered_model_name="Modelling-dan-Tuning-Registry"
+    )
+
 
